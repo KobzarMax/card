@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: "Nexa";
+            src: url("./fonts/Nexa Regular.otf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Nexa";
+            src: url("./fonts/Nexa Bold.otf") format("opentype");
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Nexa";
+            src: url("./fonts/Nexa Light.otf") format("opentype");
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            font-weight: 500;
+        }
+        .card {
+            width: 1050px;
+            height: 600px;
+            background-color: #1c1c1c;
+            color: #f0f0f0;
+            display: flex;
+            gap: 2px;
+            flex-direction: column;
+            /* justify-content: space-between; */
+            justify-content: center;
+            padding: 40px 61px; /* reduced padding to maximize content area */
+            box-sizing: border-box;
+        }
+        .grid {
+            display: grid;
+            grid-template-rows: repeat(5, 1fr); /* evenly distribute grid rows */
+            /* gap: 8px; */
+            flex-grow: 0.5;
+            /* line-height: 1; */
+            padding-left: 80px;
+        }
+        p, span {
+            font-size: 36px; /* scale everything up */
+        }
+        .grid__item {
+            display: grid;
+            grid-template-columns: 180px auto 1fr;
+            align-items: center;
+            gap: 8px;
+            font-size: 36px; /* increased font size to fill space */
+        }
+        .first {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 12px;
+        }
+        .keyword {
+            color: #89cff0;
+        }
+        .equel {
+            color: #ff9a9a;
+        }
+        .action {
+            color: #a8e6a1;
+        }
+        .value {
+            color: #fff4b1;
+        }
+        .semicolumn {
+            color: white;
+        }
+        .call__action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 36px;
+        }
+        .call__action-inner {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+        }
+        .keyword__name {
+            color: #ffcc9e;
+        }
+        .card.back {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f2fff2;
+            font-family: "Nexa", sans-serif;
+            /* font-family: ; */
+            font-size: 137px;
+            font-weight: 700;
+            background-color: #0A2E0A;
+            letter-spacing: -0.01em;
+        }
+        .companyName {
+            color: #f2fff2;
+            font-family: "Nexa", sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <p><span class="keyword">function</span> <span class="action">stayInTouch</span>() &#123</p>
+        <div class="grid">
+            <div class="grid__item">
+                <div class="first"><span class="keyword__name">name</span></div>
+                <span class="equel">=</span>
+                <span class="value">"KOBZAR.IT"<span class="semicolumn">;</span></span>
+            </div>
+            <div class="grid__item">
+                <div class="first"><span class="keyword__name">phone</span></div>
+                <span class="equel">=</span>
+                <span class="value">"+44 7555 842461"<span class="semicolumn">;</span></span>
+            </div>
+            <div class="grid__item">
+                <div class="first"><span class="keyword__name">email</span></div>
+                <span class="equel">=</span>
+                <span class="value">"office@kobzarit.com"<span class="semicolumn">;</span></span>
+            </div>
+            <div class="grid__item">
+                <div class="first"><span class="keyword__name">website</span></div>
+                <span class="equel">=</span>
+                <span class="value">"www.kobzarit.com"<span class="semicolumn">;</span></span>
+            </div>
+            <div class="grid__item">
+                <div class="first"><span class="keyword__name">Insta|FB</span></div>
+                <span class="equel">=</span>
+                <span class="value">"@kobzar.it"<span class="semicolumn">;</span></span>
+            </div>
+        </div>
+        <p>&#125</p>
+        <div class="call__action">
+            <div class="call__action-inner">
+                <p class="keyword__name">stayInTouch</p>();
+            </div>
+            <span class="companyName">
+                kobzarit.com
+            </span>
+        </div>
+    </div>
+    <div class="card back">
+        KOBZAR.IT
+    </div>
+        
+</body>
+</html>
